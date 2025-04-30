@@ -7,3 +7,46 @@ body{
 .primaryMenu a.active{
     color: var(--color-branding-success);
 }
+
+.bannerBg{
+    background-image: url(/public/images/BG.png);
+}
+.prevArrow,
+.nextArrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    
+    font-size: 20px;
+    border: 1px solid var(--color-gray-400);
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99999;
+}
+.prevArrow:hover,
+.nextArrow:hover{
+    background-color: var(--color-branding-success);
+    color: white;
+    border: var(--color-branding-success);
+}
+.prevArrow {
+    left: 50px;
+}
+.nextArrow {
+    right: 50px;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--color-gren-gray-scale-200) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: var(--color-branding-success) !important;
+}

@@ -33,3 +33,6 @@
     @apply mx-auto ;
 }
 
+.btn{
+    @apply font-semibold text-[16px] leading-[120%] text-white bg-branding-success lg:rounded-[53px] lg:px-[40px] lg:py-[16px] inline-flex px-3 py-4 rounded-sm;
+}
