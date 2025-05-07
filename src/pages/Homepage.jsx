@@ -1,21 +1,21 @@
-import React from 'react'
-import Banner from '../components/Banner/Banner'
-import ProductCard from '../components/utils/ProductCard'
+import React from "react";
+import Banner from "../components/Banner/Banner";
+import ProductsGrid from "../components/Products/ProductsGrid";
+import CategorySlider from "../components/utils/CategorySlider";
 
 const Homepage = () => {
   return (
     <>
-      <Banner/>
-      <section id='featuredProducts'>
-        <div className="container grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-6">
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+      <Banner />
+      <ProductsGrid limit={4} />
+
+      <section id="topCategory" className="py-[80px] my-[80px] bg-gray-200">
+        <div className="container">
+          <CategorySlider />
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
