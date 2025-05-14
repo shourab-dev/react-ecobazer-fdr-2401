@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.primaryMenu a.active{
+.primaryMenu a.active {
     color: var(--color-branding-success);
 }
 
-.bannerBg{
+.bannerBg {
     background-image: url(/public/images/BG.png);
 }
+
 .prevArrow,
-.nextArrow{
+.nextArrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -20,33 +21,51 @@ body{
     height: 45px;
     border-radius: 50%;
     background-color: white;
-    
+
     font-size: 20px;
     border: 1px solid var(--color-gray-400);
-    
+
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 99999;
 }
+
 .prevArrow:hover,
-.nextArrow:hover{
+.nextArrow:hover {
     background-color: var(--color-branding-success);
     color: white;
     border: var(--color-branding-success);
 }
+
 .prevArrow {
     left: 50px;
 }
+
 .nextArrow {
     right: 50px;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: var(--color-gren-gray-scale-200) !important;
     opacity: 1 !important;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--color-branding-success) !important;
+}
+
+
+.swiper-slide-thumb-active img {
+    opacity: 1;
+    transition: 0.35s opacity;
+    outline: 3px solid var(--color-branding-success);
+}
+
+
+@media (max-width: 600px) {
+
+    .productSlider .swiper {
+        height: auto !important;
+    }
 }

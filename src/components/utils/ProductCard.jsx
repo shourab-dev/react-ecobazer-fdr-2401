@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="productCard border border-gray-300 rounded-lg">
       <div className="productThumb relative">
-        <Link>
+        <Link to={`/product/${product.id}`}>
           <p className="bg-branding-error text-white py-[3px] px-2 inline-block rounded-sm top-4 left-4 absolute text-sm">
             Save {product.discountPercentage} %
           </p>
@@ -20,7 +20,10 @@ const ProductCard = ({ product }) => {
         </Link>
       </div>
       <div className="productCnt p-4 relative">
-        <Link className="text-neutral-600 text-sm font-normal leading-tight">
+        <Link
+          to={`/product/${product.id}`}
+          className="text-neutral-600 text-sm font-normal leading-tight"
+        >
           {product.title}
         </Link>
         <p className="text-zinc-900 text-base font-medium leading-normal">
